@@ -1,0 +1,23 @@
+{
+  "resolution": {
+    "designWidth": 750,
+    "designHeight": 1624,
+    "scaleMode": "fixedauto",
+    "backgroundColor": "rgba(255, 255, 255, 1)"
+  },
+  "2D": {
+    "useRetinalCanvas": true
+  },
+  "physics2D": {
+    "debugDraw": true,
+    "drawCenterOfMass": true
+  },
+  "modules": {
+    "laya.d3": true,
+    "laya.ui": true,
+    "laya.physics2D": true
+  },
+  "splash": {
+    "fit": "center"
+  }
+}
