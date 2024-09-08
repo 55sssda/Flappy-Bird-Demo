@@ -5,5 +5,6 @@
  * Scene.ls
  */
 export class LoadingBase extends Laya.Scene {
+    public Box!: Laya.Box;
 }
 

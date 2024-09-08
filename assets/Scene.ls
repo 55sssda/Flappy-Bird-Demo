@@ -10,15 +10,15 @@
   "name": "Scene2D",
   "_$child": [
     {
-      "_$id": "1tvkosdz",
-      "_$type": "ProgressBar",
-      "name": "ProgressBar",
-      "x": 126,
-      "y": 331,
-      "width": 552,
-      "height": 71,
-      "skin": "",
-      "value": 0.419
+      "_$id": "zah5ftts",
+      "_$var": true,
+      "_$type": "Box",
+      "name": "Box",
+      "x": 290,
+      "y": 727,
+      "width": 200,
+      "height": 200,
+      "bgColor": "rgba(255, 3, 3, 1)"
     }
   ]
 }

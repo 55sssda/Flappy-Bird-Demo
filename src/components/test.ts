@@ -9,6 +9,10 @@ class test{
         bg.width=Laya.stage.width;
         bg.height=Laya.stage.height;
         Laya.stage.addChild(bg);
+        Laya.stage.getChildByName('root').getChildByName('Scene2D').bg=bg;
+    }
+    t(){
+        // console.log(Laya);
     }
 }
 
