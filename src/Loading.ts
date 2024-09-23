@@ -4,6 +4,7 @@ import background from "./view/background/background";
 import progress from "./view/progress/progress";
 import progressText from "./view/progress/text";
 import title from "./view/title/title";
+import playBtn from "./view/playBtn/playBtn";
 import {assets} from "./map/assets";
 @regClass()
 export class Loading extends LoadingBase {
@@ -18,12 +19,16 @@ export class Loading extends LoadingBase {
                 progressObject.setValue(p);
             }).then((assetsResult)=>{
                 progressObject.setValue(1);
-                Laya.Tween.to(this.progress,{alpha:0},2000,Laya.Ease.elasticOutm,Laya.Handler.create(this,()=>{
+                Laya.Tween.to(this.progress,{alpha:0},300,Laya.Ease.elasticOutm,Laya.Handler.create(this,()=>{
                     Laya.stage.removeChild(this.progress);
                 }))
-                Laya.Tween.to(this.progressText,{alpha:0},2000,Laya.Ease.elasticOutm,Laya.Handler.create(this,()=>{
+                Laya.Tween.to(this.progressText,{alpha:0},300,Laya.Ease.elasticOutm,Laya.Handler.create(this,()=>{
                     Laya.stage.removeChild(this.progressText);
                 }))
+                new playBtn(assetsResult[0]);
+
+
+
             })
         })
     }
