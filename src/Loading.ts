@@ -26,8 +26,8 @@ export class Loading extends LoadingBase {
                     Laya.stage.removeChild(this.progressText);
                 }))
                 new playBtn(assetsResult[0]);
-
-
+                Laya.stage.addChild(this.play);
+                Laya.Tween.to(this.play,{alpha:1},300,Laya.Ease.linearIn,void 0);
 
             })
         })
