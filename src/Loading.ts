@@ -5,7 +5,8 @@ import progress from "./view/progress/progress";
 import progressText from "./view/progress/text";
 import title from "./view/title/title";
 import playBtn from "./view/playBtn/playBtn";
-import {assets} from "./map/assets";
+import shareBtn from "./view/shareBtn/shareBtn";
+import assets from "./map/assets";
 @regClass()
 export class Loading extends LoadingBase {
     onAwake(): void {
@@ -28,7 +29,9 @@ export class Loading extends LoadingBase {
                 new playBtn(assetsResult[0]);
                 Laya.stage.addChild(this.play);
                 Laya.Tween.to(this.play,{alpha:1},300,Laya.Ease.linearIn,void 0);
-
+                new shareBtn(assetsResult[1]);
+                Laya.stage.addChild(this.shareBtn);
+                Laya.Tween.to(this.shareBtn,{alpha:1},300,Laya.Ease.linearIn,void 0);
             })
         })
     }
