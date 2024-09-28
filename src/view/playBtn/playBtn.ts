@@ -5,7 +5,7 @@ export default class playBtn{
         play.width=Laya.stage.width*0.3;
         play.height=Laya.stage.width*0.18;
         play.x=Laya.stage.width*0.5;
-        play.y=Laya.stage.height*0.8;
+        play.y=Laya.stage.height*0.75;
         play.anchorX=0.5;
         play.anchorY=0.5;
         play.alpha=0;

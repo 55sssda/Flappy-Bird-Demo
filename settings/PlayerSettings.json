@@ -3,6 +3,7 @@
     "designWidth": 750,
     "designHeight": 1624,
     "scaleMode": "fixedauto",
+    "screenMode": "vertical",
     "backgroundColor": "rgba(255, 255, 255, 1)"
   },
   "2D": {
