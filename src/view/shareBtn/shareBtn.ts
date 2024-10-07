@@ -36,14 +36,32 @@ export default class shareBtn {
         list.y=Laya.stage.height*0.45;
         list.zOrder=9999999;
         list.graphics.drawRoundRect(0,0,list.width,list.height,10,10,10,10,"#fff");
-
-        list.vScrollBarSkin="atlas/comp/vslider.png"
-        const image=new Laya.Image();
-        image.skin="resources/bg_night.png"
-        image.width=500;
-        image.height=1200;
-        list.addChild(image);
+        list.scrollType=Laya.ScrollType.Vertical;
+        this.list=list;
         Laya.stage.addChild(list);
         Laya.stage.addChild(mask);
+        mask.on('click',()=>{
+            Laya.stage.removeChild(list);
+            Laya.stage.removeChild(mask);
+        })
+        this.createItem();
+    }
+    createItem(){
+        const item=new Laya.Box();
+        item.width=this.list.width*0.95;
+        item.height=130;
+        item.x=this.list.width*0.025;
+        item.y=10;
+        // item.bgColor="red"
+        this.list.addChild(item);
+        const headerImage=new Laya.Image();
+        headerImage.width=item.width*0.18;
+        headerImage.height=headerImage.width;
+        headerImage.anchorX=0;
+        headerImage.anchorY=0.5;
+        headerImage.y=item.height/2;
+        headerImage.skin="http://gips0.baidu.com/it/u=3557606594,2640240494&fm=3028&app=3028&f=JPEG&fmt=auto?w=2048&h=2048"
+        headerImage.graphics.drawRoundRect(0,0,headerImage.width,headerImage.height,10,10,10,10,"#fff");
+        item.addChild(headerImage);
     }
 }
