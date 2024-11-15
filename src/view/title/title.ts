@@ -12,6 +12,7 @@ class title{
         title.scaleX=0;
         title.scaleY=0;
         Laya.stage.addChild(title);
+        Laya.stage.getChildByName('root').getChildByName('Scene2D').title=title;
         gsap.to(title,{scaleX:1.2,scaleY:1.2,duration:0.3,onComplete(){
             gsap.to(title,{scaleX:0.8,scaleY:0.8,duration:0.3,onComplete(){
                 gsap.to(title,{scaleX:1,scaleY:1,duration:0.3})

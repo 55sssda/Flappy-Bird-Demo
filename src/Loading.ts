@@ -7,6 +7,7 @@ import title from "./view/title/title";
 import playBtn from "./view/playBtn/playBtn";
 import shareBtn from "./view/shareBtn/shareBtn";
 import assets from "./map/assets";
+import init from "./view/init/init";
 @regClass()
 export class Loading extends LoadingBase {
     onAwake(): void {
@@ -26,6 +27,18 @@ export class Loading extends LoadingBase {
                 Laya.Tween.to(this.progressText,{alpha:0},300,Laya.Ease.elasticOutm,Laya.Handler.create(this,()=>{
                     Laya.stage.removeChild(this.progressText);
                 }))
+                Laya.stage.game=new init(
+                    [assetsResult[12],assetsResult[13],assetsResult[14]],
+                    [assetsResult[15],assetsResult[16],assetsResult[17]],
+                    assetsResult[18],
+                    assetsResult[19],
+                    [assetsResult[2],assetsResult[3],assetsResult[4],assetsResult[5],assetsResult[6],assetsResult[7],assetsResult[8],assetsResult[9],assetsResult[10],assetsResult[11]],
+                    [assetsResult[20],assetsResult[21],assetsResult[22],assetsResult[23]],
+                    assetsResult[24],
+                    assetsResult[25],
+                    assetsResult[26],
+                    assetsResult[27],
+                );
                 new playBtn(assetsResult[0]);
                 Laya.stage.addChild(this.play);
                 Laya.Tween.to(this.play,{alpha:1},300,Laya.Ease.linearIn,void 0);

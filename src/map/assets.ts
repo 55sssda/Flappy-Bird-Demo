@@ -1,5 +1,31 @@
 let assets=[
     "resources/button_play.png",
     "resources/button_score.png",
+    "resources/font_048.png",
+    "resources/font_049.png",
+    "resources/font_050.png",
+    "resources/font_051.png",
+    "resources/font_052.png",
+    "resources/font_053.png",
+    "resources/font_054.png",
+    "resources/font_055.png",
+    "resources/font_056.png",
+    "resources/font_057.png",
+    "resources/bird1_0.png",//12
+    "resources/bird1_1.png",//13
+    "resources/bird1_2.png",//14
+    "resources/bird2_0.png",//15
+    "resources/bird2_1.png",//16
+    "resources/bird2_2.png",//17
+    "resources/ground.png",
+    "resources/tutorial.png",
+    "resources/pipe_down.png",
+    "resources/pipe_up.png",
+    "resources/pipe2_down.png",
+    "resources/pipe2_up.png",
+    "resources/text_ready.png",
+    "resources/text_game_over.png",
+    "resources/button_pause.png",
+    "resources/button_resume.png",
 ];
 export default assets;

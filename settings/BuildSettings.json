@@ -1,3 +1,6 @@
 {
-  "name": "FlappyBird"
+  "name": "FlappyBird",
+  "web": {
+    "useSafeFileExtensions": true
+  }
 }
