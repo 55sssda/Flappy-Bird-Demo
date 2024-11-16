@@ -10,7 +10,6 @@
     "useRetinalCanvas": true
   },
   "physics2D": {
-    "debugDraw": true,
     "drawCenterOfMass": true
   },
   "modules": {
